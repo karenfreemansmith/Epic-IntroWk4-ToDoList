@@ -24,19 +24,22 @@ Users are able to delegate tasks to others or claim them for themselves
 * Example Input: Walk the dog, buy groceries
 * Example Output: buy groceries - Steve, walk the dog - Bob
 
-## Setup/Installation Requirements
+## Technologies Used
+HTML, CSS
 
-* _Copy the repository from GitHub_
-* _Open the index.html file a browser of your choice_
+## Setup/Installation
+* [View on Github Pages](https://karenfreemansmith.github.io/EpicIntroWk1-PetWebsite)
+* _OR_
+* Clone diectory 
+* Open index.html in your favorite browser
 
-## GitHub link
+## Support & Contact
+For questions, concerns, or suggestions please email karenfreemansmith@gmail.com
 
-https://github.com/ewajm/Template
+## Known Issues
+* None
 
-## Licensing
+## Legal
+*Licensed under the GNU General Public License v3.0*
 
-* MIT
-
-Copyright (c) 2016 **_Ewa Manek and Karen Freeman-Smith_**
-
-Original Template Copyright (c) 2016 **_Ryan Loos_**
+Copyright (c) 2016 Copyright _[Karen Freeman-Smith](https://karenfreemansmith.github.io)_ All Rights Reserved.
