@@ -1,13 +1,25 @@
 # To Do List
+Version 0.0.1: August 22, 2016
+by [Karen Freeman-Smith](https://karenfreemansmith.github.io) and [Ewa Manek](htps://github.com/ewajm)
 
-#### By _Ewa Manek and Karen Freeman-Smith_
+### Technologies Used
+HTML, CSS, Bootstrap, JavaScript, jQuery, jQueryUI(drag & drop)
+
+![screenshot of project running](screenshot.png)
 
 ## Description
+*[Epicodus](http://epicodus.com) Intro to Programming Week 4 Pair Project with Ewa Manek: A web-based to-do list with drag and drop tasks.*
 
-_A To Do List webpage_
+## Setup/Installation
+* [View on Github Pages](https://karenfreemansmith.github.io/Epic-IntroWk4-ToDoList)
+* _OR_
+* Clone directory
+* Open index.html in your favorite browser
 
-### Specifications
+## Support & Contact
+For questions, concerns, or suggestions please email karenfreemansmith@gmail.com
 
+## Specifications
 When a user enters a task to do, it is output on the page
 * Example Input: Walk the dog
 * Example Output: Walk the dog
@@ -24,22 +36,10 @@ Users are able to delegate tasks to others or claim them for themselves
 * Example Input: Walk the dog, buy groceries
 * Example Output: buy groceries - Steve, walk the dog - Bob
 
-## Technologies Used
-HTML, CSS
-
-## Setup/Installation
-* [View on Github Pages](https://karenfreemansmith.github.io/EpicIntroWk1-PetWebsite)
-* _OR_
-* Clone diectory 
-* Open index.html in your favorite browser
-
-## Support & Contact
-For questions, concerns, or suggestions please email karenfreemansmith@gmail.com
-
 ## Known Issues
 * None
 
 ## Legal
 *Licensed under the GNU General Public License v3.0*
 
-Copyright (c) 2016 Copyright _[Karen Freeman-Smith](https://karenfreemansmith.github.io)_ All Rights Reserved.
+Copyright (c) 2016 Copyright _[Karen Freeman-Smith](https://karenfreemansmith.github.io) & [Ewa Manek](htps://github.com/ewajm)_ All Rights Reserved.
