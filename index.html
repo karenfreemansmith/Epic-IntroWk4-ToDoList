@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+
     <link href='css/bootstrap.min.css' rel='stylesheet' type='text/css'>
-    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css"> -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
     <link href='css/bootstrap-theme.min.css' rel='stylesheet' type='text/css'>
     <link href='css/styles.css' rel='stylesheet' type='text/css'>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
-    <script src='js/bootstrap.min.js' type='text/javascript'></script>
-    <script src='js/scripts.js'></script>
+
     <title>To Do List</title>
   </head>
   <body>
@@ -22,31 +21,40 @@
         <div class="form-group">
           <label for="assignTo">Assign task to:</label>
           <select class="form-control" id="assignTo">
-            <option checked>Steve</option>
-            <option>Katy</option>
-            <option>Dmitri</option>
+            <option>Android</option>
+            <option>Java</option>
+            <option>JavaScript</option>
+            <option selected>HTML</option>
           </select>
         </div>
         <button type="submit" class="btn btn-primary">Save</button>
       </form>
       <div id="result" class="row">
-        <div class="col-md-4">
-          <h3>Katy</h3>
-          <ul id="katy" class="connectedSortable">
+        <div class="col-md-3">
+          <h3>Android</h3>
+          <ul id="android" class="connectedSortable">
           </ul>
         </div>
-        <div class="col-md-4">
-          <h3>Steve</h3>
-          <ul id="steve" class="connectedSortable">
+        <div class="col-md-3">
+          <h3>Java</h3>
+          <ul id="java" class="connectedSortable">
           </ul>
         </div>
-        <div class="col-md-4">
-          <h3>Dmitri</h3>
-          <ul id="dmitri" class="connectedSortable">
+        <div class="col-md-3">
+          <h3>JavaScript</h3>
+          <ul id="javascript" class="connectedSortable">
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>HTML</h3>
+          <ul id="html" class="connectedSortable">
           </ul>
         </div>
       </div>
     </div>
-
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script src='js/bootstrap.min.js' type='text/javascript'></script>
+    <script src='js/scripts.js'></script>
   </body>
 </html>

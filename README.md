@@ -1,6 +1,6 @@
 # To Do List
-Version 0.0.1: August 22, 2016
-by [Karen Freeman-Smith](https://karenfreemansmith.github.io) and [Ewa Manek](htps://github.com/ewajm)
+Version 0.0.2: January 30, 2017
+by [Karen Freeman-Smith](https://karenfreemansmith.github.io) 
 
 ### Technologies Used
 HTML, CSS, Bootstrap, JavaScript, jQuery, jQueryUI(drag & drop)
@@ -8,7 +8,7 @@ HTML, CSS, Bootstrap, JavaScript, jQuery, jQueryUI(drag & drop)
 ![screenshot of project running](screenshot.png)
 
 ## Description
-*[Epicodus](http://epicodus.com) Intro to Programming Week 4 Pair Project with Ewa Manek: A web-based to-do list with drag and drop tasks.*
+*[Epicodus](http://epicodus.com) Intro to Programming Week 4 Pair Project with [Ewa Manek](htps://github.com/ewajm): A web-based to-do list with drag and drop tasks updated to use local storage and sort tasks by type rather than people.*
 
 ## Setup/Installation
 * [View on Github Pages](https://karenfreemansmith.github.io/Epic-IntroWk4-ToDoList)
@@ -42,4 +42,4 @@ Users are able to delegate tasks to others or claim them for themselves
 ## Legal
 *Licensed under the GNU General Public License v3.0*
 
-Copyright (c) 2016 Copyright _[Karen Freeman-Smith](https://karenfreemansmith.github.io) & [Ewa Manek](htps://github.com/ewajm)_ All Rights Reserved.
+Copyright (c) 2016 Copyright _[Karen Freeman-Smith](https://karenfreemansmith.github.io)_ All Rights Reserved.

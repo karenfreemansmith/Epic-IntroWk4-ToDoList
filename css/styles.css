@@ -17,21 +17,21 @@
   margin-right: 10px;
 }
 
-#katy, #steve, #dmitri {
+#android, #java, #javascript, #html {
   border: 1px solid #eee;
   min-height: 20px;
   list-style-type:circle;
   margin: 0;
   padding: 5px 0 0 0;
 }
-#katy li, #steve li, #dmitri li {
+#android li, #java li, #javascript li, #html li {
   margin: 0 5px 5px 5px;
   padding: 5px;
   font-size: 1.2em;
 }
 
 body {
-  background-image: url("../img/bg.jpg");
+  background-image: url("../img/bg2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   margin: auto;
