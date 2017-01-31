@@ -41,11 +41,7 @@ $(document).ready(function(){
     event.preventDefault();
     var myTask = new Task($("#input").val(), $("#assignTo").val().toLowerCase());
     tasks.push(myTask);
-    
     showTasks(tasks);
-    
-
-
     saveTasks(tasks);
     $("form")[0].reset();
   });
@@ -66,11 +62,20 @@ $(document).ready(function(){
   } );
   
   function showTasks(tasks) {
+    var theClass = "";
     clearTasks();
     tasks.forEach(function(task) {
-      $("#result ul#"+task.assignedTo).append("<li>" + task.taskName + "</li>");
+      if(task.finished) {
+        theClass="class='done'";
+      } else {
+        theClass="";
+      }
+      $("#result ul#"+task.assignedTo).append("<li " + theClass + ">" + task.taskName + "</li>");
+      
       $("ul#"+task.assignedTo + " li").last().dblclick(function() {
           task.toggleTask();
+          alert(task.finished);
+          saveTasks(tasks);
           if(task.finished) {
             $(this).addClass("done");
           } else {
