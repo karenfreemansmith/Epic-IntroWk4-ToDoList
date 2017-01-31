@@ -9,39 +9,44 @@ Task.prototype.toggleTask = function() {
   this.finished = !this.finished;
 }
 
+function getTasks() {
+  var tasks=[];
+  if(localStorage.myTasks) {
+    tasks=JSON.parse(localStorage.getItem("myTasks"));
+  } else {
+    console.log("Tasks not found");
+  }
+  return tasks;
+}
+
+function saveTasks(tasks) {
+  localStorage.setItem("myTasks", JSON.stringify(tasks));
+}
+
+function resetTasks() {
+  localStorage.removeItem("myTasks");
+}
+
 
 
 //<!-- Front End  -->
 $(document).ready(function(){
   
-  if(localStorage.myTasks) {
-    var tasks=JSON.parse(localStorage.getItem("myTasks"));
-    console.log(tasks);
-    // we are getting tasks here, and adding new tasks, but they are not being added to the lists on load...so lots of duplicates at this point...
-  } else {
-    var tasks=[];
-    console.log("Tasks not found");
-  }
+  var tasks = getTasks();
+  console.log(tasks);
+  
+  showTasks(tasks);
 
   $("form#inputForm").submit(function(event){
     event.preventDefault();
     var myTask = new Task($("#input").val(), $("#assignTo").val().toLowerCase());
     tasks.push(myTask);
     
-    // This should be pulled out into a function that 
-    // 1) clears the lists, and 
-    // 2) rewrites the whole list
-    $("#result ul#"+myTask.assignedTo).append("<li>" + myTask.taskName + "</li>");
-    $("ul#"+myTask.assignedTo + " li").last().dblclick(function() {
-      myTask.toggleTask();
-      if(myTask.finished) {
-        $(this).addClass("done");
-      } else {
-        $(this).removeClass("done");
-      }
-    });
-    console.log(tasks);
-    localStorage.setItem("myTasks", JSON.stringify(tasks));
+    showTasks(tasks);
+    
+
+
+    saveTasks(tasks);
     $("form")[0].reset();
   });
   
@@ -55,9 +60,27 @@ $(document).ready(function(){
     tasks.forEach(function(task){
       if(task.taskName === thisTask){
         task.assignedTo = newAssignment;
-        // probably need to be saving the whole task list from here (as well?) need a "save" function to keep code dry...
+        saveTasks(tasks);
       }
-    })
+    });
   } );
   
+  function showTasks(tasks) {
+    clearTasks();
+    tasks.forEach(function(task) {
+      $("#result ul#"+task.assignedTo).append("<li>" + task.taskName + "</li>");
+      $("ul#"+task.assignedTo + " li").last().dblclick(function() {
+          task.toggleTask();
+          if(task.finished) {
+            $(this).addClass("done");
+          } else {
+            $(this).removeClass("done");
+          }
+      });
+    });
+  }
+  
+  function clearTasks() {
+    $("#result ul#android, #result ul#java, #result ul#javascript, #result ul#html").empty();
+  }
 });
