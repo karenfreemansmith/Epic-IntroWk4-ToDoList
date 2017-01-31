@@ -1,5 +1,5 @@
 # To Do List
-Version 0.0.2: January 30, 2017
+Version 0.0.2: January 31, 2017
 by [Karen Freeman-Smith](https://karenfreemansmith.github.io) 
 
 ### Technologies Used
@@ -20,24 +20,24 @@ HTML, CSS, Bootstrap, JavaScript, jQuery, jQueryUI(drag & drop)
 For questions, concerns, or suggestions please email karenfreemansmith@gmail.com
 
 ## Specifications
-When a user enters a task to do, it is output on the page
-* Example Input: Walk the dog
-* Example Output: Walk the dog
 
-When a user finishes a task, they can do something to indicate that it is done.  
-* Example Input: Walk the dog
-* Example Output: X Walk the dog
+* User can add a new task and assign it to a category
+* User can double-click a task to complete
+* User can move a task to new category (drag and drop)
+* Tasks are saved to local storage and load when page reloads
+* Tasks can be reordered within a category (drag and drop)
 
-User is able to put a priority on tasks and sort by priority
-* Example Input: Walk the dog - priority 2, buy groceries - priority 1
-* Example Output: buy groceries, walk the dog
-
-Users are able to delegate tasks to others or claim them for themselves
-* Example Input: Walk the dog, buy groceries
-* Example Output: buy groceries - Steve, walk the dog - Bob
 
 ## Known Issues
-* None
+* Only tasks added since last reload "hear" double-click, so can't complete older tasks
+
+
+## Future Enhancements
+* Save order of tasks within categories
+* Edit (Add/Delete) categories
+* Edit tasks
+* Delete tasks
+
 
 ## Legal
 *Licensed under the GNU General Public License v3.0*
