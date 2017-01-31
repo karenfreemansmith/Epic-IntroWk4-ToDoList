@@ -11,7 +11,7 @@ HTML, CSS, Bootstrap, JavaScript, jQuery, jQueryUI(drag & drop)
 *[Epicodus](http://epicodus.com) Intro to Programming Week 4 Pair Project with [Ewa Manek](htps://github.com/ewajm): A web-based to-do list with drag and drop tasks updated to use local storage and sort tasks by type rather than people.*
 
 ## Setup/Installation
-* [View on Github Pages](https://karenfreemansmith.github.io/Epic-IntroWk4-ToDoList)
+* [View on Github Pages](https://karenfreemansmith.github.io/Epic-IntroWk4-ToDoList/)
 * _OR_
 * Clone directory
 * Open index.html in your favorite browser
